@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TaskMaster - Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Je reprends la même navigation que l'accueil -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#about">À propos</a></li>
+                <li><a href="../index.html#projects">Projets</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section héro du projet -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="project-title">TaskMaster</h1>
+                <p class="project-subtitle">Application de gestion de tâches moderne</p>
+                <div class="project-links">
+                    <a href="#" class="btn-primary">Voir la démo</a>
+                    <a href="#" class="btn-secondary">Code GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Détails du projet -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-content">
+                
+                <!-- Vue d'ensemble -->
+                <div class="project-section">
+                    <h2>Vue d'ensemble</h2>
+                    <p>TaskMaster est une application web de gestion de tâches que j'ai développée en HTML, CSS et JavaScript pur. L'objectif était de créer une interface moderne et intuitive permettant aux utilisateurs d'organiser efficacement leurs tâches quotidiennes.</p>
+                </div>
+
+                <!-- Technologies utilisées -->
+                <div class="project-section">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>HTML5</h3>
+                            <p>Structure sémantique avec les balises modernes</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>CSS3</h3>
+                            <p>Animations, Grid Layout, Variables CSS</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>JavaScript</h3>
+                            <p>Logique interactive et gestion du LocalStorage</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonctionnalités principales -->
+                <div class="project-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <h3>Gestion complète des tâches</h3>
+                            <p>Ajout, modification, suppression et marquage comme terminé</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Catégories personnalisées</h3>
+                            <p>Organisation par catégories avec codes couleur</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Filtrage intelligent</h3>
+                            <p>Filtres par statut, catégorie et date</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Sauvegarde automatique</h3>
+                            <p>Les données persistent grâce au LocalStorage</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Interface responsive</h3>
+                            <p>Optimisée pour tous les appareils</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Animations fluides</h3>
+                            <p>Transitions CSS pour une expérience utilisateur agréable</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Défis rencontrés -->
+                <div class="project-section">
+                    <h2>Défis techniques rencontrés</h2>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h3>Gestion du state JavaScript</h3>
+                            <p>Sans framework, j'ai dû créer ma propre logique de gestion d'état pour maintenir la cohérence entre l'interface et les données.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Performance des animations</h3>
+                            <p>Optimisation des transitions CSS pour éviter les ralentissements lors de l'ajout/suppression de nombreuses tâches.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Responsive design avancé</h3>
+                            <p>Adaptation de l'interface pour les écrans tactiles tout en gardant une expérience fluide.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ce que j'ai appris -->
+                <div class="project-section">
+                    <h2>Ce que j'ai appris</h2>
+                    <ul class="learning-list">
+                        <li>Maîtrise approfondie de la manipulation du DOM en JavaScript vanilla</li>
+                        <li>Gestion avancée du LocalStorage pour la persistance des données</li>
+                        <li>Création d'animations CSS performantes et fluides</li>
+                        <li>Architecture de code JavaScript modulaire sans framework</li>
+                        <li>Techniques de responsive design avec CSS Grid et Flexbox</li>
+                        <li>Optimisation des performances pour les applications front-end</li>
+                    </ul>
+                </div>
+
+                <!-- Évolutions futures -->
+                <div class="project-section">
+                    <h2>Évolutions prévues</h2>
+                    <div class="future-features">
+                        <p>Synchronisation cloud, notifications push, collaboration en temps réel, thèmes personnalisables</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Retour aux projets -->
+    <section class="back-to-projects">
+        <div class="container">
+            <a href="../index.html#projects" class="btn-primary">Retour aux projets</a>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

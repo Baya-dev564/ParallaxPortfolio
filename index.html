@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio Parallax | Développeur Web</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Je crée une navigation fixe qui reste visible pendant le scroll -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">Portfolio</div>
+            <ul class="nav-menu">
+                <li><a href="#home">Accueil</a></li>
+                <li><a href="#about">À propos</a></li>
+                <li><a href="#projects">Projets</a></li>
+                <li><a href="#contact">Contact</a></li>
+            </ul>
+            <!-- Je prépare un menu hamburger pour mobile -->
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Je conçois ma section héro avec l'effet parallax principal -->
+    <section id="home" class="hero-section">
+        <!-- J'ajoute un arrière-plan qui bougera différemment du contenu -->
+        <div class="parallax-bg"></div>
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <!-- Je divise mon titre en plusieurs spans pour animer chaque partie -->
+                <span class="hero-text">Salut, je suis</span>
+                <span class="hero-name">Développeur Web</span>
+            </h1>
+            <p class="hero-description">
+                Je crée des expériences web modernes et interactives
+            </p>
+            <!-- J'ajoute deux boutons avec des styles différents -->
+            <div class="hero-buttons">
+                <a href="#projects" class="btn-primary">Voir mes projets</a>
+                <a href="#contact" class="btn-secondary">Me contacter</a>
+            </div>
+        </div>
+        <!-- Je crée un indicateur de scroll animé -->
+        <div class="scroll-indicator">
+            <div class="mouse">
+                <div class="wheel"></div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Je développe ma section à propos avec des barres de compétences animées -->
+    <section id="about" class="about-section">
+        <div class="container">
+            <h2 class="section-title">À propos de moi</h2>
+            <div class="about-content">
+                <div class="about-text">
+                    <p>Passionné par le développement web, je maîtrise les technologies front-end et back-end pour créer des applications complètes et performantes.</p>
+                    <!-- Je liste mes compétences avec des barres de progression -->
+                    <div class="skills">
+                        <div class="skill-item">
+                            <span class="skill-name">HTML/CSS</span>
+                            <div class="skill-bar">
+                                <!-- J'utilise data-width pour animer la barre au scroll -->
+                                <div class="skill-progress" data-width="95%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">JavaScript</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="90%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">PHP</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">SQL/MySQL</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="80%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">Node.js</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="85%"></div>
+                            </div>
+                        </div>
+                        <div class="skill-item">
+                            <span class="skill-name">MongoDB</span>
+                            <div class="skill-bar">
+                                <div class="skill-progress" data-width="75%"></div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Je présente mes projets dans une grille responsive -->
+    <section id="projects" class="projects-section">
+        <div class="container">
+            <h2 class="section-title">Mes Projets</h2>
+            <div class="projects-grid">
+                <!-- Je crée une carte pour TaskMaster -->
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>TaskMaster</h3>
+                        <p>Application de gestion de tâches moderne avec interface interactive et animations fluides</p>
+                        <!-- J'ajoute les technologies utilisées -->
+                        <div class="project-tech">
+                            <span class="tech-tag">HTML</span>
+                            <span class="tech-tag">CSS</span>
+                            <span class="tech-tag">JavaScript</span>
+                        </div>
+                        <a href="projects/taskmaster.html" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+                
+                <!-- Je présente BlogAPI -->
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>BlogAPI</h3>
+                        <p>API REST complète pour système de blog avec PHP et MySQL</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                            <span class="tech-tag">API REST</span>
+                        </div>
+                        <a href="projects/blogapi.html" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+                
+                <!-- Je montre ContactsAPI -->
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>ContactsAPI</h3>
+                        <p>Gestionnaire de contacts avec Node.js et MongoDB, recherche avancée</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">Node.js</span>
+                            <span class="tech-tag">MongoDB</span>
+                            <span class="tech-tag">Express</span>
+                        </div>
+                        <a href="projects/contactsapi.html" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+                
+                <!-- J'ajoute EcoRide -->
+                <div class="project-card">
+                    <div class="project-image"></div>
+                    <div class="project-content">
+                        <h3>EcoRide</h3>
+                        <p>Application de covoiturage écologique avec géolocalisation et système de réservation</p>
+                        <div class="project-tech">
+                            <span class="tech-tag">JavaScript</span>
+                            <span class="tech-tag">API Maps</span>
+                            <span class="tech-tag">PHP</span>
+                            <span class="tech-tag">MySQL</span>
+                        </div>
+                        <a href="projects/ecoride.html" class="project-link">Voir le projet</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Je termine par une section contact simple mais efficace -->
+    <section id="contact" class="contact-section">
+        <div class="container">
+            <h2 class="section-title">Contactez-moi</h2>
+            <div class="contact-content">
+                <p>Prêt à travailler ensemble ? Contactez-moi !</p>
+                <a href="mailto:amellbaya@gmail.com" class="contact-email">amellbaya@gmail.com</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Je charge mon script JavaScript pour les animations -->
+    <script src="js/script.js"></script>
+</body>
+</html>
