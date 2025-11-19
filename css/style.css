@@ -62,7 +62,7 @@ body {
     left: 0;
     width: 100%;
     background: rgba(255, 255, 255, 0.95); /* Transparence légère */
-    backdrop-filter: blur(10px); /* Effet de flou moderne */
+    backdrop-filter: blur(10px); /* Effet de flou  */
     z-index: 1000; /* Au-dessus de tout le reste */
     transition: var(--transition);
     padding: 15px 0;
@@ -127,7 +127,7 @@ body {
 /* =======================
    SECTION HERO PARALLAX
    ======================= */
-/* Je crée ma section principale avec un effet parallax époustouflant */
+/* Je crée ma section principale avec un effet parallax */
 .hero-section {
     height: 100vh; /* Pleine hauteur d'écran */
     position: relative; /* Pour positionner les éléments internes */

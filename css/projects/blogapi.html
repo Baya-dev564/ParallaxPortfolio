@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>BlogAPI - Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Je reprends la même navigation que l'accueil -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#about">À propos</a></li>
+                <li><a href="../index.html#projects">Projets</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section héro du projet -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="project-title">BlogAPI</h1>
+                <p class="project-subtitle">API REST complète pour système de blog</p>
+                <div class="project-links">
+                    <a href="#" class="btn-primary">Voir la démo</a>
+                    <a href="#" class="btn-secondary">Code GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Détails du projet -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-content">
+                
+                <!-- Vue d'ensemble -->
+                <div class="project-section">
+                    <h2>Vue d'ensemble</h2>
+                    <p>BlogAPI est une API REST complète développée en PHP et MySQL que j'ai créée pour gérer un système de blog professionnel. Cette API permet de gérer les articles, les catégories, les commentaires et les utilisateurs avec une authentification sécurisée.</p>
+                </div>
+
+                <!-- Technologies utilisées -->
+                <div class="project-section">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>PHP 8</h3>
+                            <p>Développement backend avec POO et architecture MVC</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>MySQL</h3>
+                            <p>Base de données relationnelle avec requêtes optimisées</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>API REST</h3>
+                            <p>Architecture RESTful avec codes de statut HTTP</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonctionnalités principales -->
+                <div class="project-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <h3>CRUD complet des articles</h3>
+                            <p>Création, lecture, modification et suppression d'articles</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Gestion des catégories</h3>
+                            <p>Organisation des articles par catégories hiérarchiques</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Système de commentaires</h3>
+                            <p>Modération et gestion des commentaires utilisateurs</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Authentification JWT</h3>
+                            <p>Sécurisation des endpoints avec tokens JWT</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Validation des données</h3>
+                            <p>Contrôles stricts côté serveur et sanitisation</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Pagination optimisée</h3>
+                            <p>Gestion efficace de grandes quantités de données</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Défis rencontrés -->
+                <div class="project-section">
+                    <h2>Défis techniques rencontrés</h2>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h3>Architecture API scalable</h3>
+                            <p>Conception d'une architecture modulaire permettant d'ajouter facilement de nouvelles fonctionnalités tout en gardant un code maintenable.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Sécurité des données</h3>
+                            <p>Mise en place de mesures de sécurité contre les injections SQL, XSS et autres vulnérabilités courantes des applications web.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Optimisation des requêtes</h3>
+                            <p>Performance des requêtes SQL complexes avec jointures multiples pour afficher les articles avec leurs métadonnées.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ce que j'ai appris -->
+                <div class="project-section">
+                    <h2>Ce que j'ai appris</h2>
+                    <ul class="learning-list">
+                        <li>Développement d'APIs REST avec PHP orienté objet</li>
+                        <li>Gestion avancée des bases de données MySQL avec optimisations</li>
+                        <li>Implémentation de l'authentification JWT en PHP</li>
+                        <li>Validation et sanitisation robuste des données côté serveur</li>
+                        <li>Architecture MVC adaptée aux APIs modernes</li>
+                        <li>Gestion des erreurs et codes de statut HTTP appropriés</li>
+                        <li>Documentation d'API et tests avec Postman</li>
+                    </ul>
+                </div>
+
+                <!-- Évolutions futures -->
+                <div class="project-section">
+                    <h2>Évolutions prévues</h2>
+                    <div class="future-features">
+                        <p>Cache Redis, recherche full-text, versionning d'API, webhooks, intégration de médias</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Retour aux projets -->
+    <section class="back-to-projects">
+        <div class="container">
+            <a href="../index.html#projects" class="btn-primary">Retour aux projets</a>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>

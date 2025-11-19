@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>EcoRide - Portfolio</title>
+    <link rel="stylesheet" href="../css/style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Je reprends la même navigation que l'accueil -->
+    <nav class="navbar">
+        <div class="nav-container">
+            <div class="nav-logo">
+                <a href="../index.html">Portfolio</a>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="../index.html">Accueil</a></li>
+                <li><a href="../index.html#about">À propos</a></li>
+                <li><a href="../index.html#projects">Projets</a></li>
+                <li><a href="../index.html#contact">Contact</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Section héro du projet -->
+    <section class="project-hero">
+        <div class="container">
+            <div class="project-header">
+                <h1 class="project-title">EcoRide</h1>
+                <p class="project-subtitle">Application de covoiturage écologique</p>
+                <div class="project-links">
+                    <a href="#" class="btn-primary">Voir la démo</a>
+                    <a href="#" class="btn-secondary">Code GitHub</a>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Détails du projet -->
+    <section class="project-details">
+        <div class="container">
+            <div class="project-content">
+                
+                <!-- Vue d'ensemble -->
+                <div class="project-section">
+                    <h2>Vue d'ensemble</h2>
+                    <p>EcoRide est une application web de covoiturage centrée sur l'aspect écologique. J'ai développé cette plateforme pour connecter les utilisateurs souhaitant partager leurs trajets tout en réduisant leur empreinte carbone. L'application intègre la géolocalisation et un système de réservation complet.</p>
+                </div>
+
+                <!-- Technologies utilisées -->
+                <div class="project-section">
+                    <h2>Technologies utilisées</h2>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <h3>JavaScript ES6+</h3>
+                            <p>Logique côté client avec fonctionnalités modernes</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>API Google Maps</h3>
+                            <p>Géolocalisation et calcul d'itinéraires optimisés</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>PHP 8</h3>
+                            <p>Backend robuste avec gestion des sessions</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>MySQL</h3>
+                            <p>Base de données relationnelle pour les trajets et utilisateurs</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Fonctionnalités principales -->
+                <div class="project-section">
+                    <h2>Fonctionnalités principales</h2>
+                    <div class="features-list">
+                        <div class="feature-item">
+                            <h3>Recherche de trajets</h3>
+                            <p>Système de recherche intelligent par lieu de départ/arrivée</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Géolocalisation temps réel</h3>
+                            <p>Localisation automatique et suggestions d'itinéraires</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Système de réservation</h3>
+                            <p>Réservation de places avec confirmation automatique</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Calcul d'empreinte carbone</h3>
+                            <p>Estimation des économies de CO2 par trajet partagé</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Profils utilisateurs</h3>
+                            <p>Gestion des profils avec système de notation</p>
+                        </div>
+                        <div class="feature-item">
+                            <h3>Interface responsive</h3>
+                            <p>Optimisée pour mobile avec PWA capabilities</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Défis rencontrés -->
+                <div class="project-section">
+                    <h2>Défis techniques rencontrés</h2>
+                    <div class="challenges">
+                        <div class="challenge-item">
+                            <h3>Intégration API géolocalisation</h3>
+                            <p>Gestion complexe des permissions de géolocalisation et fallbacks pour les navigateurs non compatibles tout en respectant la vie privée.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Algorithme de matching</h3>
+                            <p>Développement d'un algorithme efficace pour matcher les trajets selon la proximité géographique et les horaires compatibles.</p>
+                        </div>
+                        <div class="challenge-item">
+                            <h3>Optimisation mobile</h3>
+                            <p>Interface tactile optimisée avec gestion des événements touch et adaptation pour différentes tailles d'écran.</p>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Ce que j'ai appris -->
+                <div class="project-section">
+                    <h2>Ce que j'ai appris</h2>
+                    <ul class="learning-list">
+                        <li>Intégration d'APIs tierces complexes (Google Maps)</li>
+                        <li>Gestion de la géolocalisation et des permissions navigateur</li>
+                        <li>Développement d'algorithmes de matching géospatial</li>
+                        <li>Optimisation d'interfaces pour usage mobile intensif</li>
+                        <li>Architecture MVC adaptée aux applications géolocalisées</li>
+                        <li>Gestion des données en temps réel et cache intelligent</li>
+                        <li>Considérations UX pour applications de mobilité</li>
+                    </ul>
+                </div>
+
+                <!-- Évolutions futures -->
+                <div class="project-section">
+                    <h2>Évolutions prévues</h2>
+                    <div class="future-features">
+                        <p>Notifications push, système de paiement intégré, mode hors-ligne, analytics CO2 avancés</p>
+                    </div>
+                </div>
+
+            </div>
+        </div>
+    </section>
+
+    <!-- Retour aux projets -->
+    <section class="back-to-projects">
+        <div class="container">
+            <a href="../index.html#projects" class="btn-primary">Retour aux projets</a>
+        </div>
+    </section>
+
+    <script src="../js/script.js"></script>
+</body>
+</html>
