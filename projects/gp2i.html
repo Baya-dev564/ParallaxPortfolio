@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>EcoRide - Portfolio</title>
+    <title>GP2i - Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Je reprends la même navigation que l'accueil -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -28,12 +27,11 @@
         </div>
     </nav>
 
-    <!-- Section héro du projet -->
     <section class="project-hero">
         <div class="container">
             <div class="project-header">
-                <h1 class="project-title">EcoRide</h1>
-                <p class="project-subtitle">Application de covoiturage écologique</p>
+                <h1 class="project-title">GP2i</h1>
+                <p class="project-subtitle">Site vitrine pour une agence de conseil en création web et communication digitale</p>
                 <div class="project-links">
                     <a href="#" class="btn-primary">Voir la démo</a>
                     <a href="#" class="btn-secondary">Code GitHub</a>
@@ -42,109 +40,102 @@
         </div>
     </section>
 
-    <!-- Détails du projet -->
     <section class="project-details">
         <div class="container">
             <div class="project-content">
-                
-                <!-- Vue d'ensemble -->
+
                 <div class="project-section">
                     <h2>Vue d'ensemble</h2>
-                    <p>EcoRide est une application web de covoiturage centrée sur l'aspect écologique. J'ai développé cette plateforme pour connecter les utilisateurs souhaitant partager leurs trajets tout en réduisant leur empreinte carbone. L'application intègre la géolocalisation et un système de réservation complet.</p>
+                    <p>GP2i est le site vitrine d'une agence de conseil basée à Montpellier, spécialisée dans la création de sites web professionnels et la gestion des réseaux sociaux. J'ai développé ce projet avec une architecture PHP MVC complète, une base de données MySQL, un système de formulaire de contact sécurisé et une gestion rigoureuse du consentement RGPD. Le tout est déployé via Docker pour garantir la portabilité de l'environnement.</p>
                 </div>
 
-                <!-- Technologies utilisées -->
                 <div class="project-section">
                     <h2>Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
-                            <h3>JavaScript ES6+</h3>
-                            <p>Logique côté client avec fonctionnalités modernes</p>
-                        </div>
-                        <div class="tech-item">
-                            <h3>API Google Maps</h3>
-                            <p>Géolocalisation et calcul d'itinéraires optimisés</p>
-                        </div>
-                        <div class="tech-item">
-                            <h3>PHP 8</h3>
-                            <p>Backend robuste avec gestion des sessions</p>
+                            <h3>PHP 8 (MVC)</h3>
+                            <p>Architecture Modèle-Vue-Contrôleur avec routeur maison et autoloading PSR-4</p>
                         </div>
                         <div class="tech-item">
                             <h3>MySQL</h3>
-                            <p>Base de données relationnelle pour les trajets et utilisateurs</p>
+                            <p>Base de données relationnelle pour les contacts et consentements RGPD</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Docker</h3>
+                            <p>Conteneurisation de l'environnement PHP, MySQL et Apache</p>
+                        </div>
+                        <div class="tech-item">
+                            <h3>Composer</h3>
+                            <p>Gestion des dépendances PHP et autoloading PSR-4</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Fonctionnalités principales -->
                 <div class="project-section">
                     <h2>Fonctionnalités principales</h2>
                     <div class="features-list">
                         <div class="feature-item">
-                            <h3>Recherche de trajets</h3>
-                            <p>Système de recherche intelligent par lieu de départ/arrivée</p>
+                            <h3>Formulaire de contact sécurisé</h3>
+                            <p>Validation côté serveur, protection CSRF, rate limiting et envoi d'email via PHPMailer</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Géolocalisation temps réel</h3>
-                            <p>Localisation automatique et suggestions d'itinéraires</p>
+                            <h3>Gestion RGPD complète</h3>
+                            <p>Bannière de consentement cookies, enregistrement des consentements en base de données</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Système de réservation</h3>
-                            <p>Réservation de places avec confirmation automatique</p>
+                            <h3>Sécurité renforcée</h3>
+                            <p>Protection XSS, injection SQL, headers de sécurité HTTP et sanitisation des entrées</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Calcul d'empreinte carbone</h3>
-                            <p>Estimation des économies de CO2 par trajet partagé</p>
+                            <h3>Routeur PHP maison</h3>
+                            <p>Système de routing GET/POST vers les controllers sans framework externe</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Profils utilisateurs</h3>
-                            <p>Gestion des profils avec système de notation</p>
+                            <h3>Présentation des services</h3>
+                            <p>Création de sites web, gestion réseaux sociaux, SEO, maintenance et support</p>
                         </div>
                         <div class="feature-item">
                             <h3>Interface responsive</h3>
-                            <p>Optimisée pour mobile avec PWA capabilities</p>
+                            <p>Design moderne et optimisé pour tous les appareils</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Défis rencontrés -->
                 <div class="project-section">
                     <h2>Défis techniques rencontrés</h2>
                     <div class="challenges">
                         <div class="challenge-item">
-                            <h3>Intégration API géolocalisation</h3>
-                            <p>Gestion complexe des permissions de géolocalisation et fallbacks pour les navigateurs non compatibles tout en respectant la vie privée.</p>
+                            <h3>Architecture MVC sans framework</h3>
+                            <p>Conception d'un routeur et d'un système MVC from scratch en PHP pur, avec autoloading PSR-4 via Composer, sans s'appuyer sur Laravel ou Symfony.</p>
                         </div>
                         <div class="challenge-item">
-                            <h3>Algorithme de matching</h3>
-                            <p>Développement d'un algorithme efficace pour matcher les trajets selon la proximité géographique et les horaires compatibles.</p>
+                            <h3>Conformité RGPD</h3>
+                            <p>Mise en place d'un système complet de gestion du consentement cookies, stockage en base avec versioning de la politique de confidentialité.</p>
                         </div>
                         <div class="challenge-item">
-                            <h3>Optimisation mobile</h3>
-                            <p>Interface tactile optimisée avec gestion des événements touch et adaptation pour différentes tailles d'écran.</p>
+                            <h3>Sécurisation du formulaire</h3>
+                            <p>Implémentation de plusieurs couches de sécurité : tokens CSRF, rate limiting par session, validation et sanitisation de toutes les entrées utilisateur.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Ce que j'ai appris -->
                 <div class="project-section">
                     <h2>Ce que j'ai appris</h2>
                     <ul class="learning-list">
-                        <li>Intégration d'APIs tierces complexes (Google Maps)</li>
-                        <li>Gestion de la géolocalisation et des permissions navigateur</li>
-                        <li>Développement d'algorithmes de matching géospatial</li>
-                        <li>Optimisation d'interfaces pour usage mobile intensif</li>
-                        <li>Architecture MVC adaptée aux applications géolocalisées</li>
-                        <li>Gestion des données en temps réel et cache intelligent</li>
-                        <li>Considérations UX pour applications de mobilité</li>
+                        <li>Conception d'une architecture MVC PHP sans framework</li>
+                        <li>Mise en place d'un système de routing maison GET/POST</li>
+                        <li>Gestion complète de la sécurité web (CSRF, XSS, injections SQL)</li>
+                        <li>Conformité RGPD : consentement, politique de confidentialité, stockage</li>
+                        <li>Configuration et utilisation de Docker pour PHP/MySQL</li>
+                        <li>Envoi d'emails transactionnels sécurisés avec PHPMailer</li>
+                        <li>Autoloading PSR-4 et gestion des dépendances avec Composer</li>
                     </ul>
                 </div>
 
-                <!-- Évolutions futures -->
                 <div class="project-section">
                     <h2>Évolutions prévues</h2>
                     <div class="future-features">
-                        <p>Notifications push, système de paiement intégré, mode hors-ligne, analytics CO2 avancés</p>
+                        <p>Espace client sécurisé, tableau de bord admin pour gérer les demandes de contact, intégration d'un CMS léger, analytics conformes RGPD</p>
                     </div>
                 </div>
 
@@ -152,7 +143,6 @@
         </div>
     </section>
 
-    <!-- Retour aux projets -->
     <section class="back-to-projects">
         <div class="container">
             <a href="../index.html#projects" class="btn-primary">Retour aux projets</a>

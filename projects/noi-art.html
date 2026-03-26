@@ -3,12 +3,11 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>BlogAPI - Portfolio</title>
+    <title>NOI'ART - Portfolio</title>
     <link rel="stylesheet" href="../css/style.css">
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap" rel="stylesheet">
 </head>
 <body>
-    <!-- Je reprends la même navigation que l'accueil -->
     <nav class="navbar">
         <div class="nav-container">
             <div class="nav-logo">
@@ -28,12 +27,11 @@
         </div>
     </nav>
 
-    <!-- Section héro du projet -->
     <section class="project-hero">
         <div class="container">
             <div class="project-header">
-                <h1 class="project-title">BlogAPI</h1>
-                <p class="project-subtitle">API REST complète pour système de blog</p>
+                <h1 class="project-title">NOI'ART</h1>
+                <p class="project-subtitle">Plateforme de valorisation de la création humaine face à l'IA</p>
                 <div class="project-links">
                     <a href="#" class="btn-primary">Voir la démo</a>
                     <a href="#" class="btn-secondary">Code GitHub</a>
@@ -42,105 +40,93 @@
         </div>
     </section>
 
-    <!-- Détails du projet -->
     <section class="project-details">
         <div class="container">
             <div class="project-content">
-                
-                <!-- Vue d'ensemble -->
+
                 <div class="project-section">
                     <h2>Vue d'ensemble</h2>
-                    <p>BlogAPI est une API REST complète développée en PHP et MySQL que j'ai créée pour gérer un système de blog professionnel. Cette API permet de gérer les articles, les catégories, les commentaires et les utilisateurs avec une authentification sécurisée.</p>
+                    <p>NOI'ART est une plateforme pensée pour valoriser la création humaine dans un monde où les images générées par IA se multiplient. Elle naît d'un constat simple : les artistes, illustrateurs et graphistes doivent pouvoir montrer leur travail sans être noyés dans des contenus générés par IA. La plateforme met en place des outils pour distinguer le travail humain et redonner de la valeur à la relation entre créateurs et recruteurs.</p>
                 </div>
 
-                <!-- Technologies utilisées -->
                 <div class="project-section">
                     <h2>Technologies utilisées</h2>
                     <div class="tech-grid">
                         <div class="tech-item">
-                            <h3>PHP 8</h3>
-                            <p>Développement backend avec POO et architecture MVC</p>
+                            <h3>HTML5</h3>
+                            <p>Structure sémantique et accessibilité des contenus</p>
                         </div>
                         <div class="tech-item">
-                            <h3>MySQL</h3>
-                            <p>Base de données relationnelle avec requêtes optimisées</p>
-                        </div>
-                        <div class="tech-item">
-                            <h3>API REST</h3>
-                            <p>Architecture RESTful avec codes de statut HTTP</p>
+                            <h3>CSS3</h3>
+                            <p>Design immersif, animations et mise en page responsive</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Fonctionnalités principales -->
                 <div class="project-section">
                     <h2>Fonctionnalités principales</h2>
                     <div class="features-list">
                         <div class="feature-item">
-                            <h3>CRUD complet des articles</h3>
-                            <p>Création, lecture, modification et suppression d'articles</p>
+                            <h3>Profil artiste</h3>
+                            <p>Espace dédié à chaque créateur pour exposer son travail et son univers artistique</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Gestion des catégories</h3>
-                            <p>Organisation des articles par catégories hiérarchiques</p>
+                            <h3>Badge "100% Humain"</h3>
+                            <p>Système de distinction visuelle pour certifier les œuvres créées par des humains</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Système de commentaires</h3>
-                            <p>Modération et gestion des commentaires utilisateurs</p>
+                            <h3>Mise en relation</h3>
+                            <p>Interface de contact entre artistes et recruteurs ou clients potentiels</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Authentification JWT</h3>
-                            <p>Sécurisation des endpoints avec tokens JWT</p>
+                            <h3>Galerie de projets</h3>
+                            <p>Présentation visuelle soignée des portfolios d'artistes</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Validation des données</h3>
-                            <p>Contrôles stricts côté serveur et sanitisation</p>
+                            <h3>Design immersif</h3>
+                            <p>Interface artistique et animée pour mettre en valeur les créations</p>
                         </div>
                         <div class="feature-item">
-                            <h3>Pagination optimisée</h3>
-                            <p>Gestion efficace de grandes quantités de données</p>
+                            <h3>Interface responsive</h3>
+                            <p>Expérience optimale sur tous les appareils, du mobile au desktop</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Défis rencontrés -->
                 <div class="project-section">
                     <h2>Défis techniques rencontrés</h2>
                     <div class="challenges">
                         <div class="challenge-item">
-                            <h3>Architecture API scalable</h3>
-                            <p>Conception d'une architecture modulaire permettant d'ajouter facilement de nouvelles fonctionnalités tout en gardant un code maintenable.</p>
+                            <h3>Design artistique en CSS pur</h3>
+                            <p>Créer une interface visuellement forte et immersive sans framework, en travaillant finement les animations, dégradés et transitions CSS.</p>
                         </div>
                         <div class="challenge-item">
-                            <h3>Sécurité des données</h3>
-                            <p>Mise en place de mesures de sécurité contre les injections SQL, XSS et autres vulnérabilités courantes des applications web.</p>
+                            <h3>Accessibilité et contrastes</h3>
+                            <p>Maintenir un design artistique tout en respectant les standards d'accessibilité (contrastes, lisibilité, navigation clavier).</p>
                         </div>
                         <div class="challenge-item">
-                            <h3>Optimisation des requêtes</h3>
-                            <p>Performance des requêtes SQL complexes avec jointures multiples pour afficher les articles avec leurs métadonnées.</p>
+                            <h3>Responsive sans framework</h3>
+                            <p>Adapter une mise en page complexe et artistique à toutes les tailles d'écran uniquement avec CSS Grid et Flexbox.</p>
                         </div>
                     </div>
                 </div>
 
-                <!-- Ce que j'ai appris -->
                 <div class="project-section">
                     <h2>Ce que j'ai appris</h2>
                     <ul class="learning-list">
-                        <li>Développement d'APIs REST avec PHP orienté objet</li>
-                        <li>Gestion avancée des bases de données MySQL avec optimisations</li>
-                        <li>Implémentation de l'authentification JWT en PHP</li>
-                        <li>Validation et sanitisation robuste des données côté serveur</li>
-                        <li>Architecture MVC adaptée aux APIs modernes</li>
-                        <li>Gestion des erreurs et codes de statut HTTP appropriés</li>
-                        <li>Documentation d'API et tests avec Postman</li>
+                        <li>Conception d'interfaces orientées expérience utilisateur et émotion</li>
+                        <li>Maîtrise avancée des animations CSS (keyframes, transitions)</li>
+                        <li>Structuration sémantique HTML5 pour l'accessibilité</li>
+                        <li>Responsive design sans framework CSS</li>
+                        <li>Réflexion UX/UI sur un sujet à fort enjeu sociétal (IA vs création humaine)</li>
+                        <li>Importance du storytelling visuel dans un projet web</li>
                     </ul>
                 </div>
 
-                <!-- Évolutions futures -->
                 <div class="project-section">
                     <h2>Évolutions prévues</h2>
                     <div class="future-features">
-                        <p>Cache Redis, recherche full-text, versionning d'API, webhooks, intégration de médias</p>
+                        <p>Système d'authentification artiste, vérification d'œuvres humaines via metadata, messagerie intégrée recruteur/artiste, moteur de recherche par style artistique</p>
                     </div>
                 </div>
 
@@ -148,7 +134,6 @@
         </div>
     </section>
 
-    <!-- Retour aux projets -->
     <section class="back-to-projects">
         <div class="container">
             <a href="../index.html#projects" class="btn-primary">Retour aux projets</a>
